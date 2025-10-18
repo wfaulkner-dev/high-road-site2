@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>High Road Business Solutions</title>
+  <meta name="description" content="Consulting and marketing support for hemp/CBD and local retail — EDDM, pop-up training, and practical growth ops.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://assets.calendly.com">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">High Road Business Solutions</h1>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+        <a href="#booking">Book</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2>Clear plans. Clean execution. Real results.</h2>
+        <p>Simple, effective retail strategy and marketing—EDDM campaigns, pop‑up training, and on‑the‑ground improvements that move the numbers.</p>
+        <div class="cta-row">
+          <a href="#booking" class="btn primary">Book an intro call</a>
+          <a href="#contact" class="btn">Send a message</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container two-col">
+        <div>
+          <h3>About</h3>
+          <p>High Road Business Solutions LLC helps small retail teams punch above their weight with practical systems and accountable execution. We keep it simple, measurable, and honest.</p>
+        </div>
+        <div class="card">
+          <h4>Quick facts</h4>
+          <ul>
+            <li>Retail ops &amp; merchandising, 20+ yrs</li>
+            <li>Hemp/CBD marketing &amp; compliance aware</li>
+            <li>EDDM playbooks + pop‑up training</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section alt">
+      <div class="container">
+        <h3>Services</h3>
+        <div class="grid3">
+          <div class="card">
+            <h4>EDDM Mailers</h4>
+            <p>Targeted routes, compliant creative, offer testing, and tracking. Start small, scale what works.</p>
+          </div>
+          <div class="card">
+            <h4>Pop‑up Training</h4>
+            <p>Staff scripts, sampling standards, attachment ladder, and close tactics—without medical claims.</p>
+          </div>
+          <div class="card">
+            <h4>Store Ops</h4>
+            <p>Fast fixes for in‑stock, layout, and payroll rhythms. Clean metrics and accountability loops.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container two-col">
+        <div>
+          <h3>Contact</h3>
+          <p>Use this form to reach out. We’ll reply within one business day.</p>
+          <!-- Netlify Forms -->
+          <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html" class="form">
+            <input type="hidden" name="form-name" value="contact">
+            <p class="hidden">
+              <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+            </p>
+            <label>Full name
+              <input type="text" name="name" required>
+            </label>
+            <label>Email
+              <input type="email" name="email" required>
+            </label>
+            <label>Company (optional)
+              <input type="text" name="company">
+            </label>
+            <label>Message
+              <textarea name="message" rows="5" required></textarea>
+            </label>
+            <button type="submit" class="btn primary">Send message</button>
+          </form>
+          <p class="fineprint">By submitting, you agree that we may contact you about your inquiry. We don’t sell or share your info.</p>
+        </div>
+        <div class="card">
+          <h4>Email &amp; Social</h4>
+          <ul class="contact-list">
+            <li><strong>Email:</strong> <a href="mailto:info@highroadbiz.com">info@highroadbiz.com</a></li>
+            <li><strong>LinkedIn:</strong> <a href="#" target="_blank" rel="noopener">Add later</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="booking" class="section alt">
+      <div class="container">
+        <h3>Book an intro call</h3>
+        <p>Pick a time that works for you:</p>
+
+        <!-- Calendly embed -->
+        <div class="calendly-inline-widget" data-url="https://calendly.com/YOUR_HANDLE/intro" style="min-width:320px;height:700px;"></div>
+        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> High Road Business Solutions LLC — All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

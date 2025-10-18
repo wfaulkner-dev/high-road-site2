@@ -1,0 +1,10 @@
+# Netlify config for this static site
+[build]
+  publish = "."  # serve from repository root
+
+# Example redirect (optional). Remove or edit when you add a real domain.
+# [[redirects]]
+#   from = "http://*yourdomain.com/*"
+#   to = "https://yourdomain.com/:splat"
+#   status = 301
+#   force = true
